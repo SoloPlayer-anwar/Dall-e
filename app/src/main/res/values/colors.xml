@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#1B9C42</color>
+    <color name="abu">#504F5E</color>
+    <color name="tsp">#00F2F2F2</color>
+    <color name="textTitle">#1F1D2B</color>
+    <color name="textSubtitle">#2B2937</color>
+    <color name="blue">#BFD7EA</color>
+    <color name="hint">#504F5E</color>
+    <color name="baseWhite">#f2f2f2</color>
+    <color name="whiteAlpha">#10FFFFFF</color>
+    <color name="background">#1F1D2B</color>
+    <color name="bg_edit_text">#2B2937</color>
+    <color name="warnaangga">#6C5ECF</color>
+
+</resources>
