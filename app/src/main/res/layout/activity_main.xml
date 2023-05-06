@@ -189,45 +189,41 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="6dp"
                 android:background="@color/abu" />
 
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayoutName"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="10dp"
-                android:textColorHint="@color/abu"
-                app:boxBackgroundColor="@color/bg_edit_text"
-                app:boxCornerRadiusBottomEnd="4dp"
-                app:boxCornerRadiusBottomStart="4dp"
-                app:boxCornerRadiusTopEnd="4dp"
-                app:boxCornerRadiusTopStart="4dp"
-                app:counterEnabled="true"
-                app:counterMaxLength="1000"
-                app:counterTextColor="@color/white"
-                app:endIconMode="clear_text"
-                app:endIconTint="@color/abu"
-                app:startIconDrawable="@drawable/ic_open_ai"
-                app:startIconTint="@color/green">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etFullName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins"
-                    android:hint="Write prompt"
-                    android:inputType="textMultiLine"
-                    android:maxLength="1000"
-                    android:textColor="@color/white"
-                    android:textSize="13dp" />
-            </com.google.android.material.textfield.TextInputLayout>
+               <ImageView
+                   android:id="@+id/imageEmpty"
+                   android:layout_width="80dp"
+                   android:layout_height="60dp"
+                   android:layout_marginLeft="16dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginTop="10dp"
+                   android:src="@drawable/image_empty"
+                   android:scaleType="centerCrop"/>
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_width="match_parent"
+                   android:id="@+id/btnGenerate"
+                   style="@style/Widget.MaterialComponents.Button"
+                   android:textAllCaps="false"
+                   android:layout_marginTop="18dp"
+                   android:layout_marginLeft="16dp"
+                   android:layout_marginRight="16dp"
+                   android:layout_height="wrap_content"
+                   android:text="Generate Image"/>
+
+           </LinearLayout>
+
 
         </LinearLayout>
 
@@ -241,7 +237,7 @@
             android:layout_marginEnd="24dp"
             android:fontFamily="@font/poppins"
             android:gravity="center"
-            android:text="DALL·E OPEN AI RUN"
+            android:text="DALL·E OPEN AI"
             android:textColor="@color/white"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
